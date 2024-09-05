@@ -3,11 +3,15 @@
 #include<string>
 using namespace std;
 class User{
-    User(const string& name, int age);
-private:
+public:
+    User();
+public:
     string m_name;
     string m_uuid;
-    int    m_age;
-}
+    string m_email;
+    string m_username;
+    string m_phoneNumber;
+    string m_password;
+};
 
 #endif

@@ -4,6 +4,6 @@
 class Uuid{
 public:
     static std::string generate();
-}
+};
 
 #endif
