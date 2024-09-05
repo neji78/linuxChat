@@ -5,6 +5,7 @@ using namespace std;
 class User{
 public:
     User();
+    bool isEmpty();
 public:
     string m_name;
     string m_uuid;

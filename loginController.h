@@ -1,5 +1,6 @@
 #ifndef H_LOGINCONTROLLER
 #define H_LOGINCONTROLLER
+#include "user.h"
 class LoginController{
 public:
     enum Mode{
