@@ -1,9 +1,7 @@
 #include <iostream>
+#include "signUp.h"
 using namespace std;
 int main()
 {
-    // bool active = true;
-    // while(active){
-
-    // }
+    auto signUpInstance = new SignUp();
 }
