@@ -1,16 +1,18 @@
 #include "signUpController.h"
-SignUpController* SignUpController::m_instance = nulltpr;
-SignUpController::SignUpController(const User& user)
+SignUpController* SignUpController::m_instance = nullptr;
+SignUpController::SignUpController()
+{
+}
+SignUpController* SignUpController::getInstance(User user)
 {
     if(user.isEmpty()){
-        // throw an error 
+    // throw an error 
         return nullptr;
     }
-    m_user = user;
-}
-SignUpController* SignUpController::getInstance(const User& user){
-    if(m_instace == nullptr)
-        m_instance = new SignUpController(user);
+    if(m_instance == nullptr){
+        m_instance = new SignUpController();
+        m_instance->setUser(user);
+    }
     return m_instance;
 }
 void SignUpController::SignUp(Mode SignUpMode)

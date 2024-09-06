@@ -1,14 +1,13 @@
 #include "login.h"
-Login::Login(User user, Mode login_mode ):
-m_user(user)
+Login::Login()
 {
 };
-void Login::loginThroughUserPass(){
+// void Login::loginThroughUserPass(){
 
-}
-void Login::loginThroughSMS(){
+// }
+// void Login::loginThroughSMS(){
 
-}
-void Login::loginThroughEmail(){
+// }
+// void Login::loginThroughEmail(){
 
-}
+// }

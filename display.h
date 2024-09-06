@@ -2,31 +2,35 @@
 #define H_DISPLAY
 #include <iostream>
 #include <string>
-#include <list>
+#include <vector>
 using namespace std;
-void banner(string sign = "#"){
+inline void banner(string sign = "#"){
     for(int i = 0; i < 10; i++){
         cout<<sign;
     }
     cout<<endl;
 }
-void header(string title)
+inline void header(string title)
 {
-    cout<<"/t/t/t"<<title<<"/t/t/t"<<endl;
+    cout<<"\t\t\t"<<title<<"\t\t\t"<<endl;
 }
-void message(string msg)
+inline void message(string msg)
 {
     cout<<msg<<endl;
 }
-void menu(string title, string info, list<string> options)
+inline int menu(string title, string info, vector<string> options)
 {
+    int ret = -1;
     banner();
     header(title);
     message(info);
-    for(int i = 0; i < options.size(),i++)
+    for(int i = 0; i < options.size();i++)
     {
-        cout<<i + 1<<"."<<options[i]<<endl;
+        cout<<i + 1<<"."<<options.at(i)<<endl;
     }
     banner();
+    message("Enter Your Choose: " );
+    cin>>ret;
+    return ret - 1;
 }
 #endif

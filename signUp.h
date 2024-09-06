@@ -3,6 +3,7 @@
 #include <string>
 using namespace std;
 class SignUp{
+public:
     SignUp();
-}
+};
 #endif

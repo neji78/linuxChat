@@ -10,9 +10,7 @@ public:
     };
     static LoginController* getInstance();
     void login(User user, Mode login_mode = USER_PASS);
-    // void loginThroughSMS();
-    // void loginThroughEmail();
-    // void loginThroughUserPass();
+
 private:
     explicit LoginController();
 
